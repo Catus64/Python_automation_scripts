@@ -1,0 +1,209 @@
+{
+  "id": "3f1ca7bb-ed5d-4282-a94b-8d4fab1ea43d",
+  "version": "2.0",
+  "name": "sptest",
+  "url": "https://sptest.commudesk.com",
+  "tests": [{
+    "id": "60f265ab-004a-458e-8f78-761180ba8b8c",
+    "name": "sptest login",
+    "commands": [{
+      "id": "392ee24c-2f40-42e5-9ee7-ed7f511e0d70",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01a99c0e-ef5b-43f7-8164-99ff79c3aa30",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "886x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "482799ca-2ff6-4003-b810-d29fd13bb148",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "title"
+    }, {
+      "id": "553a7232-b92a-4ea1-bbab-1c931cbfa5f6",
+      "comment": "",
+      "command": "echo",
+      "target": "${title}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a474094c-8e71-4dbd-85f5-5459af279eff",
+      "comment": "",
+      "command": "if",
+      "target": "${title} == \"SP TEST - Login\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dee65a44-dc7c-439e-acbc-4ab6c95b4dd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login100-form-btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ca45b84-02cd-4efd-bd87-94db8f9b3fc5",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4533734f-56dd-4e96-9ded-a01045fadbfc",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5797cd5e-b1d1-43c2-ac61-d42ab1e9f1d2",
+    "name": "logout",
+    "commands": [{
+      "id": "413d6f83-ff79-4144-a2f6-6c0150d86e11",
+      "comment": "",
+      "command": "times",
+      "target": "2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1fd85d5-35c3-42b8-bb1a-78fab21d2b7a",
+      "comment": "",
+      "command": "open",
+      "target": "/project",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04396dbf-5945-4ead-b1ee-57edae7fd349",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "886x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "670794b9-86f3-4871-bc1e-c06c4a1cf4f8",
+      "comment": "",
+      "command": "store",
+      "target": "false",
+      "targets": [],
+      "value": "state"
+    }, {
+      "id": "d4b20acd-dffe-4765-b99f-d7bacdc7c430",
+      "comment": "",
+      "command": "echo",
+      "target": "${state}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af3ce25b-9ed7-4299-ac6e-880bc4e06fbf",
+      "comment": "",
+      "command": "while",
+      "target": "${state} != \"true\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68f4caf7-08a3-4616-9edc-66f3bdfbe71f",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "title"
+    }, {
+      "id": "524afb00-49c3-49fb-8b4e-aff9261905a2",
+      "comment": "",
+      "command": "if",
+      "target": "${title} != \"SP TEST - Login\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "576c98f1-0ef0-4653-b5a5-4bba2940eb13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-user > .dropdown-toggle > span",
+      "targets": [
+        ["css=.dropdown-user > .dropdown-toggle > span", "css:finder"],
+        ["xpath=//div[@id='navbar-mobile']/ul[2]/li[7]/a/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "778dd71b-b5c6-4f81-894d-519b5e311f39",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=.dropdown-menu-right > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log Out')]", "xpath:link"],
+        ["xpath=//div[@id='navbar-mobile']/ul[2]/li[7]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://sptest.commudesk.com/logout')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76de5f09-fed3-42c5-9c1f-b7b83920bd82",
+      "comment": "",
+      "command": "store",
+      "target": "true",
+      "targets": [],
+      "value": "state"
+    }, {
+      "id": "b9595280-ba85-4cad-833d-a12a3063e68c",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cfc4906-919b-4722-8b9a-83c8376b9ccc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login100-form-btn",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "059d0c8c-a6a0-4ede-9218-94dc24ff680f",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0afcf5e1-a75e-4433-a860-89793f573a2d",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ebf2063-1f59-48f7-a571-13d0e6f5f987",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1a93f255-7f45-410c-92cb-99bdb2305b19",
+    "name": "test",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "d130d74e-bc44-4c76-a2fb-b7eeec51ab34",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["60f265ab-004a-458e-8f78-761180ba8b8c", "5797cd5e-b1d1-43c2-ac61-d42ab1e9f1d2"]
+  }],
+  "urls": ["https://sptest.commudesk.com/"],
+  "plugins": []
+}
