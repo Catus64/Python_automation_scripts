@@ -56,3 +56,29 @@ DEBUG:root:calling repo_path
 DEBUG:root:calling repo_path
 DEBUG:root:calling repo_path
 DEBUG:root:calling repo_path
+DEBUG:root:calling and ending repo_find
+INFO:root:path: {path}
+DEBUG:root:calling Gitrepo constructor
+INFO:root:<libwyag.GitRepository object at 0x789f27879700>, /home/rahman/Documents/Automation scripts/python_code, False
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
+DEBUG:root:calling repo_path
